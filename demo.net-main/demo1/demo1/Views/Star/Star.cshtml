@@ -1,10 +1,11 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model List<Star>
+
+@foreach (var item in Model)
+{
+    <div>
+        <h1>@item.Name</h1>
+        <image width="300px" src="@item.Image">
+            <p>date:@item.CreatedDate</p>
+            <a asp-controller="New" asp-action="new">chi tiết</a>
+    </div>
 }
-Trong bản tin bão khẩn cấp phát đi tối 17/7, 
-Trung tâm Dự báo Khí tượng Thủy văn Quốc gia cho biết lúc 19h, 
-tâm bão Talim (bão số 1) cách Móng Cái (Quảng Ninh) 
-khoảng 330 km về phía đông đông nam. Sức gió mạnh nhất duy trì cấp 12, giật cấp 15 
-trong suốt những giờ qua.
