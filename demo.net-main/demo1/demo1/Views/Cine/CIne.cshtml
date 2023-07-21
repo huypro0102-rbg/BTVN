@@ -1,0 +1,11 @@
+﻿@model List<Cine>
+
+    @foreach (var item in Model)
+    {
+   <div>
+        <h1>@item.Name</h1>
+        <image width="300px" src="@item.Image">
+        <p>date:@item.CreatedDate</p>
+        <a asp-controller="New" asp-action="new">chi tiết</a>
+  </div>
+    }

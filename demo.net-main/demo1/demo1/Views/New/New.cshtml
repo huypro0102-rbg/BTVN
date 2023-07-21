@@ -1,0 +1,14 @@
+﻿@model New
+
+@*@foreach (var item in Model)
+{
+    <div>
+        <image width="500px" src="@item.Image">
+        @item.text
+</div>
+}*@
+
+<div>
+    <image width="500px" src="@Model.Image">
+        @Model.text
+</div>
